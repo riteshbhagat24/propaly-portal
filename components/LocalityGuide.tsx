@@ -17,7 +17,7 @@ export default function LocalityGuide() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {localities.map(l => (
-            <a key={l.name} href={"https://wa.me/919999999999?text=" + encodeURIComponent("Hi Propaly! I want to explore properties in " + l.name + ", Pune.")} target="_blank" rel="noopener noreferrer" className="relative rounded-2xl overflow-hidden group cursor-pointer">
+            <a key={l.name} href={"https://wa.me/919145596819?text=" + encodeURIComponent("Hi Propaly! I want to explore properties in " + l.name + ", Pune.")} target="_blank" rel="noopener noreferrer" className="relative rounded-2xl overflow-hidden group cursor-pointer">
               <img src={l.img} alt={l.name} className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute top-3 left-3">

@@ -37,7 +37,7 @@ function Card({p}: {p: typeof props[0]}) {
             <Link href={"/properties/" + p.id} className="bg-[#0A1628] text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-[#C9A84C] transition-all">
               View Details
             </Link>
-            <a href={"https://wa.me/919999999999?text=" + encodeURIComponent(msg)} target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-[#20bd5a] transition-all">
+            <a href={"https://wa.me/919145596819?text=" + encodeURIComponent(msg)} target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-[#20bd5a] transition-all">
               Enquire
             </a>
           </div>

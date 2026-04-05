@@ -72,7 +72,7 @@ export default function Reviews() {
           <p className="text-white font-bold text-lg">We're rated 4.9 ⭐ on Google</p>
           <p className="text-gray-400 text-sm">200+ verified reviews from happy Pune homebuyers</p>
         </div>
-        <a href="https://wa.me/919999999999?text=I%20want%20to%20know%20more%20about%20Propaly" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 bg-[#C9A84C] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#b8973b] transition-all">
+        <a href="https://wa.me/919145596819?text=I%20want%20to%20know%20more%20about%20Propaly" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 bg-[#C9A84C] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#b8973b] transition-all">
           Talk to Us Today →
         </a>
       </div>

@@ -53,7 +53,7 @@ export default function PropertyDetail({ params }: { params: { id: string } }) {
 
   const handleWhatsApp = () => {
     const msg = "Hi Propaly! I am interested in " + p.title + " priced at Rs. " + p.price + " in " + p.location + ". My name is " + (formData.name || 'Not provided') + " and my phone is " + (formData.phone || 'Not provided') + ". Please contact me.";
-    window.open("https://wa.me/919999999999?text=" + encodeURIComponent(msg), '_blank');
+    window.open("https://wa.me/919145596819?text=" + encodeURIComponent(msg), '_blank');
   };
 
   return (
@@ -199,7 +199,7 @@ export default function PropertyDetail({ params }: { params: { id: string } }) {
                     <button onClick={handleWhatsApp} className="w-full bg-[#25D366] text-white font-bold py-4 rounded-xl hover:bg-[#20bd5a] transition-all text-sm flex items-center justify-center gap-2">
                       💬 Send Enquiry on WhatsApp
                     </button>
-                    <a href="tel:+919999999999" className="w-full flex items-center justify-center gap-2 border-2 border-[#0A1628] text-[#0A1628] font-bold py-3 rounded-xl hover:bg-[#0A1628] hover:text-white transition-all text-sm">
+                    <a href="tel:+919145596819" className="w-full flex items-center justify-center gap-2 border-2 border-[#0A1628] text-[#0A1628] font-bold py-3 rounded-xl hover:bg-[#0A1628] hover:text-white transition-all text-sm">
                       📞 Call Propaly Expert
                     </a>
                     <p className="text-center text-xs text-gray-400">🔒 Your details are 100% safe with us</p>

@@ -20,8 +20,8 @@ export default function Footer() {
             <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-xs">Helping you find not just homes, but a piece of Pune — its vibe, chaos, culture, and charm.</p>
             <div className="flex gap-3">
               <a href="https://www.instagram.com/propaly.in/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center hover:bg-[#C9A84C]/20 transition-colors text-lg">📸</a>
-              <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center hover:bg-[#C9A84C]/20 transition-colors text-lg">💬</a>
-              <a href="tel:+919999999999" className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center hover:bg-[#C9A84C]/20 transition-colors text-lg">📞</a>
+              <a href="https://wa.me/919145596819" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center hover:bg-[#C9A84C]/20 transition-colors text-lg">💬</a>
+              <a href="tel:+919145596819" className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center hover:bg-[#C9A84C]/20 transition-colors text-lg">📞</a>
             </div>
           </div>
           <div>
@@ -34,7 +34,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2"><span>📍</span><span>Office No. 406, LMS Finswell, Viman Nagar, Pune 411014</span></li>
-              <li><a href="tel:+919999999999" className="hover:text-[#C9A84C] transition-colors">📞 +91 99999 99999</a></li>
+              <li><a href="tel:+919145596819" className="hover:text-[#C9A84C] transition-colors">📞 +91 99999 99999</a></li>
               <li><a href="mailto:vikas@propaly.in" className="hover:text-[#C9A84C] transition-colors">✉️ vikas@propaly.in</a></li>
             </ul>
           </div>

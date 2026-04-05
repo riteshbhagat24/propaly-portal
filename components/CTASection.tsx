@@ -46,8 +46,8 @@ export default function CTASection() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Not Sure Where to Start?</h2>
             <p className="text-gray-300 mb-8 text-lg">Talk to a Propaly expert on WhatsApp — right now. No forms, no waiting.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://wa.me/919999999999?text=Hi%20Propaly!%20I%20need%20help." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#20bd5a] transition-all text-lg">Chat on WhatsApp — Free</a>
-              <a href="tel:+919999999999" className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-bold px-8 py-4 rounded-2xl hover:border-[#C9A84C] hover:text-[#C9A84C] transition-all text-lg">📞 Call Us</a>
+              <a href="https://wa.me/919145596819?text=Hi%20Propaly!%20I%20need%20help." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#20bd5a] transition-all text-lg">Chat on WhatsApp — Free</a>
+              <a href="tel:+919145596819" className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-bold px-8 py-4 rounded-2xl hover:border-[#C9A84C] hover:text-[#C9A84C] transition-all text-lg">📞 Call Us</a>
             </div>
             <p className="text-gray-500 text-sm mt-6">LMS Finswell, Viman Nagar, Pune · Mon–Sat 10AM–7PM</p>
           </div>

@@ -6,7 +6,7 @@ export default function Hero() {
   const [budget, setBudget] = useState('');
   const search = () => {
     const msg = "Hi Propaly! I want to " + tab + " a property in " + (location || 'Pune') + ". Budget: " + (budget || 'Not specified');
-    window.open("https://wa.me/919999999999?text=" + encodeURIComponent(msg), '_blank');
+    window.open("https://wa.me/919145596819?text=" + encodeURIComponent(msg), '_blank');
   };
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
           <div className="mt-4 flex gap-3">
             <button onClick={search} className="flex-1 bg-[#0A1628] text-white font-semibold py-3 rounded-xl hover:bg-[#C9A84C] transition-all text-sm">Search Properties</button>
-            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white font-semibold py-3 px-5 rounded-xl hover:bg-[#20bd5a] transition-all text-sm">Chat</a>
+            <a href="https://wa.me/919145596819" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white font-semibold py-3 px-5 rounded-xl hover:bg-[#20bd5a] transition-all text-sm">Chat</a>
           </div>
         </div>
         <div className="mt-8 flex flex-wrap justify-center gap-6 text-white/70 text-sm">

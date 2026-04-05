@@ -116,7 +116,7 @@ export default function ProjectsPage() {
                       ))}
                       {p.amenities.length > 3 && <span className="text-xs text-gray-400 px-2 py-1">+{p.amenities.length - 3} more</span>}
                     </div>
-                    <a href={"https://wa.me/919999999999?text=" + encodeURIComponent("Hi Propaly! I want details about " + p.name + " by " + p.developer + " in " + p.location + ". Price starts at Rs. " + p.price + ".")} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-[#0A1628] text-white font-semibold py-3 rounded-xl hover:bg-[#C9A84C] transition-all text-sm">
+                    <a href={"https://wa.me/919145596819?text=" + encodeURIComponent("Hi Propaly! I want details about " + p.name + " by " + p.developer + " in " + p.location + ". Price starts at Rs. " + p.price + ".")} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-[#0A1628] text-white font-semibold py-3 rounded-xl hover:bg-[#C9A84C] transition-all text-sm">
                       💬 Get Full Details on WhatsApp
                     </a>
                   </div>
@@ -130,7 +130,7 @@ export default function ProjectsPage() {
         <div className="bg-[#C9A84C]/10 py-12 px-4 text-center">
           <h3 className="text-2xl font-bold text-[#0A1628] mb-3">Can't Find What You're Looking For?</h3>
           <p className="text-gray-600 mb-6">Tell us your requirements and we'll find the perfect project for you — even if it's not listed here.</p>
-          <a href="https://wa.me/919999999999?text=Hi%20Propaly!%20I%20have%20specific%20project%20requirements.%20Can%20you%20help?" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#20bd5a] transition-all text-lg">
+          <a href="https://wa.me/919145596819?text=Hi%20Propaly!%20I%20have%20specific%20project%20requirements.%20Can%20you%20help?" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#20bd5a] transition-all text-lg">
             💬 Tell Us Your Requirements
           </a>
         </div>

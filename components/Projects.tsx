@@ -50,7 +50,7 @@ export default function Projects() {
                   <Link href="/projects" className="flex-1 flex items-center justify-center bg-[#0A1628] text-white font-semibold py-3 rounded-xl hover:bg-[#C9A84C] transition-all text-sm">
                     View Project
                   </Link>
-                  <a href={"https://wa.me/919999999999?text=" + encodeURIComponent("Hi Propaly! I want details about " + p.name + " in " + p.location)} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center bg-[#25D366] text-white font-semibold py-3 rounded-xl hover:bg-[#20bd5a] transition-all text-sm">
+                  <a href={"https://wa.me/919145596819?text=" + encodeURIComponent("Hi Propaly! I want details about " + p.name + " in " + p.location)} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center bg-[#25D366] text-white font-semibold py-3 rounded-xl hover:bg-[#20bd5a] transition-all text-sm">
                     💬 Enquire
                   </a>
                 </div>

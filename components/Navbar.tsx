@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="bg-[#0A1628] text-white text-xs py-1.5 px-4 hidden md:flex justify-between items-center">
         <span>📍 Serving all of Pune's prime micro-markets</span>
         <div className="flex gap-4">
-          <a href="tel:+919999999999" className="hover:text-[#C9A84C]">📞 +91 99999 99999</a>
+          <a href="tel:+919145596819" className="hover:text-[#C9A84C]">📞 +91 99999 99999</a>
           <a href="mailto:vikas@propaly.in" className="hover:text-[#C9A84C]">✉️ vikas@propaly.in</a>
         </div>
       </div>
@@ -79,7 +79,7 @@ export default function Navbar() {
                       </ul>
                     </div>
                     <div className="col-span-2 pt-3 border-t border-gray-100">
-                      <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#20bd5a] transition-all">
+                      <a href="https://wa.me/919145596819" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#20bd5a] transition-all">
                         💬 Talk to an Expert on WhatsApp
                       </a>
                     </div>
@@ -91,7 +91,7 @@ export default function Navbar() {
             <Link href="/contact" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#C9A84C] transition-colors">Contact</Link>
           </div>
           <div className="hidden md:flex items-center gap-3">
-            <a href="https://wa.me/919999999999?text=Hi%20Propaly!" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#25D366] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#20bd5a] transition-all">
+            <a href="https://wa.me/919145596819?text=Hi%20Propaly!" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#25D366] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#20bd5a] transition-all">
               💬 WhatsApp Us
             </a>
             <Link href="/contact" className="flex items-center gap-2 border-2 border-[#0A1628] text-[#0A1628] text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#0A1628] hover:text-white transition-all">
@@ -111,7 +111,7 @@ export default function Navbar() {
           <Link href="/#properties" onClick={() => setMobileOpen(false)} className="block py-2 font-medium text-gray-700 border-b border-gray-50">Rent Property</Link>
           <Link href="/projects" onClick={() => setMobileOpen(false)} className="block py-2 font-medium text-gray-700 border-b border-gray-50">Projects</Link>
           <Link href="/contact" onClick={() => setMobileOpen(false)} className="block py-2 font-medium text-gray-700 border-b border-gray-50">Contact Us</Link>
-          <a href="https://wa.me/919999999999" target="_blank" className="block text-center bg-[#25D366] text-white font-semibold py-3 rounded-xl mt-2">💬 WhatsApp Us</a>
+          <a href="https://wa.me/919145596819" target="_blank" className="block text-center bg-[#25D366] text-white font-semibold py-3 rounded-xl mt-2">💬 WhatsApp Us</a>
         </div>
       )}
     </nav>
