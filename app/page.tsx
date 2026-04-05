@@ -1,6 +1,9 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import PropertyGrid from '../components/PropertyGrid';
+import Projects from '../components/Projects';
+import Reviews from '../components/Reviews';
+import LocalityGuide from '../components/LocalityGuide';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
 
@@ -10,6 +13,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <PropertyGrid />
+      <Projects />
+      <LocalityGuide />
+      <Reviews />
       <CTASection />
       <Footer />
       <a href="https://wa.me/919999999999?text=Hi%20Propaly!" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
