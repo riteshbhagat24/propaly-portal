@@ -31,11 +31,8 @@ export default function Navbar() {
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-[#C9A84C] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">P</span>
-            </div>
-            <span className="text-xl font-bold text-[#0A1628]">Propaly<span className="text-[#C9A84C]">.</span></span>
+          <Link href="/" className="flex items-center">
+            <img src="https://drive.google.com/uc?export=view&id=1gzFsweqCOwmY4N403tvu14j9_GmSox98" alt="Propaly Realtors" className="h-10 w-auto object-contain" />
           </Link>
           <div className="hidden md:flex items-center gap-1">
             {Object.keys(menuItems).map(item => (
