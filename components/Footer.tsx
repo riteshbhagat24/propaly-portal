@@ -1,5 +1,11 @@
 export default function Footer() {
-  const links = ['Properties in Pune','New Launches','Ready to Move','Luxury Homes','Investment Picks'];
+  const links = [
+    {label:'Properties in Pune', href:'/#properties'},
+    {label:'New Projects', href:'/projects'},
+    {label:'Ready to Move', href:'/projects'},
+    {label:'Luxury Homes', href:'/#properties'},
+    {label:'Contact Us', href:'/contact'},
+  ];
   return (
     <footer className="bg-[#060e1c] text-gray-400 pt-16 pb-8 px-4">
       <div className="max-w-7xl mx-auto">
@@ -15,12 +21,13 @@ export default function Footer() {
             <div className="flex gap-3">
               <a href="https://www.instagram.com/propaly.in/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center hover:bg-[#C9A84C]/20 transition-colors text-lg">📸</a>
               <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center hover:bg-[#C9A84C]/20 transition-colors text-lg">💬</a>
+              <a href="tel:+919999999999" className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center hover:bg-[#C9A84C]/20 transition-colors text-lg">📞</a>
             </div>
           </div>
           <div>
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Explore</h4>
             <ul className="space-y-2 text-sm">
-              {links.map(l => <li key={l}><a href="#" className="hover:text-[#C9A84C] transition-colors">{l}</a></li>)}
+              {links.map(l => <li key={l.label}><a href={l.href} className="hover:text-[#C9A84C] transition-colors">{l.label}</a></li>)}
             </ul>
           </div>
           <div>
@@ -33,10 +40,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
-          <p>© 2025 Propaly Realtors. All rights reserved.</p>
+          <p>© 2025 Propaly Realtors. All rights reserved. RERA Advisory.</p>
           <div className="flex gap-4">
+            <a href="/contact" className="hover:text-[#C9A84C]">Contact</a>
+            <a href="/projects" className="hover:text-[#C9A84C]">Projects</a>
             <a href="#" className="hover:text-[#C9A84C]">Privacy Policy</a>
-            <a href="#" className="hover:text-[#C9A84C]">Terms of Use</a>
           </div>
         </div>
       </div>
