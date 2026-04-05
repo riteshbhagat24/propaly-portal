@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="bg-[#0A1628] text-white text-xs py-1.5 px-4 hidden md:flex justify-between items-center">
         <span>📍 Serving all of Pune's prime micro-markets</span>
         <div className="flex gap-4">
-          <a href="tel:+919145596819" className="hover:text-[#C9A84C]">📞 +91 99999 99999</a>
+          <a href="tel:+919145596819" className="hover:text-[#C9A84C]">📞 +91 91455 96819</a>
           <a href="mailto:vikas@propaly.in" className="hover:text-[#C9A84C]">✉️ vikas@propaly.in</a>
         </div>
       </div>
@@ -87,14 +87,14 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <Link href="/projects" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#C9A84C] transition-colors">Projects</Link>
+
             <Link href="/contact" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#C9A84C] transition-colors">Contact</Link>
           </div>
           <div className="hidden md:flex items-center gap-3">
             <a href="https://wa.me/919145596819?text=Hi%20Propaly!" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#25D366] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#20bd5a] transition-all">
               💬 WhatsApp Us
             </a>
-            <Link href="/contact" className="flex items-center gap-2 border-2 border-[#0A1628] text-[#0A1628] text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#0A1628] hover:text-white transition-all">
+            <Link href="tel:+919145596819" className="flex items-center gap-2 border-2 border-[#0A1628] text-[#0A1628] text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#0A1628] hover:text-white transition-all">
               📞 Call
             </Link>
           </div>

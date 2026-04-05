@@ -34,7 +34,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2"><span>📍</span><span>Office No. 406, LMS Finswell, Viman Nagar, Pune 411014</span></li>
-              <li><a href="tel:+919145596819" className="hover:text-[#C9A84C] transition-colors">📞 +91 99999 99999</a></li>
+              <li><a href="tel:+919145596819" className="hover:text-[#C9A84C] transition-colors">📞 +91 91455 96819</a></li>
               <li><a href="mailto:vikas@propaly.in" className="hover:text-[#C9A84C] transition-colors">✉️ vikas@propaly.in</a></li>
             </ul>
           </div>

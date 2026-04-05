@@ -97,7 +97,7 @@ export default function ContactPage() {
                     <span className="text-2xl">📞</span>
                     <div>
                       <p className="font-semibold text-white">Call / WhatsApp</p>
-                      <a href="tel:+919145596819" className="hover:text-[#C9A84C] transition-colors">+91 99999 99999</a>
+                      <a href="tel:+919145596819" className="hover:text-[#C9A84C] transition-colors">+91 91455 96819</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
