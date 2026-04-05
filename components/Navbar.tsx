@@ -20,44 +20,38 @@ const menuItems = {
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string|null>(null);
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      {/* Top Bar */}
       <div className="bg-[#0A1628] text-white text-xs py-1.5 px-4 hidden md:flex justify-between items-center">
         <span>📍 Serving all of Pune's prime micro-markets</span>
         <div className="flex gap-4">
-          <a href="tel:+919999999999" className="hover:text-[#C9A84C] transition-colors">📞 +91 99999 99999</a>
-          <a href="mailto:vikas@propaly.in" className="hover:text-[#C9A84C] transition-colors">✉️ vikas@propaly.in</a>
+          <a href="tel:+919999999999" className="hover:text-[#C9A84C]">📞 +91 99999 99999</a>
+          <a href="mailto:vikas@propaly.in" className="hover:text-[#C9A84C]">✉️ vikas@propaly.in</a>
         </div>
       </div>
-
-      {/* Main Nav */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-[#C9A84C] rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">P</span>
             </div>
             <span className="text-xl font-bold text-[#0A1628]">Propaly<span className="text-[#C9A84C]">.</span></span>
           </Link>
-
-          {/* Desktop Mega Menu Triggers */}
           <div className="hidden md:flex items-center gap-1">
             {Object.keys(menuItems).map(item => (
               <div key={item} className="relative"
                 onMouseEnter={() => setActiveMenu(item)}
                 onMouseLeave={() => setActiveMenu(null)}
               >
-                <button className={"flex items-center gap-1 px-4 py-2 rounded-lg font-medium text-sm transition-all " + (activeMenu === item ? 'text-[#C9A84C] bg-[#C9A84C]/5' : 'text-gray-700 hover:text-[#C9A84C]')}>
+                <Link
+                  href={item === 'Projects' ? '/projects' : '/#properties'}
+                  className={"flex items-center gap-1 px-4 py-2 rounded-lg font-medium text-sm transition-all " + (activeMenu === item ? 'text-[#C9A84C] bg-[#C9A84C]/5' : 'text-gray-700 hover:text-[#C9A84C]')}
+                >
                   {item}
                   <svg className={"w-3 h-3 transition-transform " + (activeMenu === item ? 'rotate-180' : '')} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
-                </button>
-
-                {/* Mega Dropdown */}
+                </Link>
                 {activeMenu === item && (
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[480px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 grid grid-cols-2 gap-6">
                     <div>
@@ -65,9 +59,9 @@ export default function Navbar() {
                       <ul className="space-y-2">
                         {menuItems[item as keyof typeof menuItems].types.map(t => (
                           <li key={t}>
-                            <a href="#properties" className="text-sm text-gray-700 hover:text-[#C9A84C] flex items-center gap-2 transition-colors">
+                            <Link href={item === 'Projects' ? '/projects' : '/#properties'} className="text-sm text-gray-700 hover:text-[#C9A84C] flex items-center gap-2 transition-colors">
                               <span className="w-1.5 h-1.5 bg-[#C9A84C] rounded-full"></span>{t}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -77,9 +71,9 @@ export default function Navbar() {
                       <ul className="space-y-2">
                         {menuItems[item as keyof typeof menuItems].locations.map(l => (
                           <li key={l}>
-                            <a href="#properties" className="text-sm text-gray-700 hover:text-[#C9A84C] flex items-center gap-2 transition-colors">
+                            <Link href={item === 'Projects' ? '/projects' : '/#properties'} className="text-sm text-gray-700 hover:text-[#C9A84C] flex items-center gap-2 transition-colors">
                               <span className="w-1.5 h-1.5 bg-[#C9A84C] rounded-full"></span>{l}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -93,21 +87,17 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <Link href="#about" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#C9A84C] transition-colors">About</Link>
-            <Link href="#contact" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#C9A84C] transition-colors">Contact</Link>
+            <Link href="/projects" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#C9A84C] transition-colors">Projects</Link>
+            <Link href="/contact" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#C9A84C] transition-colors">Contact</Link>
           </div>
-
-          {/* Right CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="https://wa.me/919999999999?text=Hi%20Propaly!%20I%20need%20help." target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#25D366] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#20bd5a] transition-all">
+            <a href="https://wa.me/919999999999?text=Hi%20Propaly!" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#25D366] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#20bd5a] transition-all">
               💬 WhatsApp Us
             </a>
-            <a href="tel:+919999999999" className="flex items-center gap-2 border-2 border-[#0A1628] text-[#0A1628] text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#0A1628] hover:text-white transition-all">
+            <Link href="/contact" className="flex items-center gap-2 border-2 border-[#0A1628] text-[#0A1628] text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#0A1628] hover:text-white transition-all">
               📞 Call
-            </a>
+            </Link>
           </div>
-
-          {/* Mobile toggle */}
           <button className="md:hidden p-2" onClick={() => setMobileOpen(!mobileOpen)}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
@@ -115,29 +105,12 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-2">
-          {Object.keys(menuItems).map(item => (
-            <div key={item}>
-              <button onClick={() => setActiveMenu(activeMenu === item ? null : item)} className="w-full flex items-center justify-between py-2 font-medium text-gray-700">
-                {item}
-                <svg className={"w-4 h-4 transition-transform " + (activeMenu === item ? 'rotate-180' : '')} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {activeMenu === item && (
-                <div className="pl-4 pb-2 space-y-1">
-                  {menuItems[item as keyof typeof menuItems].types.map(t => (
-                    <a key={t} href="#properties" className="block text-sm text-gray-600 py-1 hover:text-[#C9A84C]">{t}</a>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
-          <Link href="#about" className="block py-2 font-medium text-gray-700">About</Link>
-          <Link href="#contact" className="block py-2 font-medium text-gray-700">Contact</Link>
+          <Link href="/#properties" onClick={() => setMobileOpen(false)} className="block py-2 font-medium text-gray-700 border-b border-gray-50">Buy Property</Link>
+          <Link href="/#properties" onClick={() => setMobileOpen(false)} className="block py-2 font-medium text-gray-700 border-b border-gray-50">Rent Property</Link>
+          <Link href="/projects" onClick={() => setMobileOpen(false)} className="block py-2 font-medium text-gray-700 border-b border-gray-50">Projects</Link>
+          <Link href="/contact" onClick={() => setMobileOpen(false)} className="block py-2 font-medium text-gray-700 border-b border-gray-50">Contact Us</Link>
           <a href="https://wa.me/919999999999" target="_blank" className="block text-center bg-[#25D366] text-white font-semibold py-3 rounded-xl mt-2">💬 WhatsApp Us</a>
         </div>
       )}
