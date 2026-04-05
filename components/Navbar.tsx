@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
-            <img src="https://drive.google.com/uc?export=view&id=1gzFsweqCOwmY4N403tvu14j9_GmSox98" alt="Propaly Realtors" className="h-10 w-auto object-contain" />
+            <img src="/logo.png" alt="Propaly Realtors" className="h-10 w-auto object-contain" />
           </Link>
           <div className="hidden md:flex items-center gap-1">
             {Object.keys(menuItems).map(item => (
